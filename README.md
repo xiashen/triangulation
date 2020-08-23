@@ -1,5 +1,18 @@
-# triangulation
-Code used in meta-analysis of tissue-trait and cell-type-trait associations
+
+## Installation
+
+We suggest installing the **triangulation** package using the `install_github` function in the **devtools** package:
+
+```{r}
+require(devtools)
+install_github('https://github.com/xiashen/triangulation')
+```
+
+then load the package via:
+
+```{r}
+require(triangulation)
+```
 
 ## Maximum likelihood estimation of operating characteristics
 
