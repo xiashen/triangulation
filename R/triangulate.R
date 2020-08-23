@@ -41,6 +41,7 @@
 #' triangulate(counts = ny, ntest = 3, B = 10) 
 #'
 #' }
+#' @export
 #' 
 
 triangulate <- function(counts, ntest, method = 'Nelder-Mead', B = 0, start = c(rep(.5, ntest*2), .5))
