@@ -21,7 +21,7 @@ require(triangulation)
 Without a gold standard, operating characteristics of different testing methods can be estimated by maximum likelihood. As long as:
 
 - **At least 3** distinct methods are applied on the same set of tests;
-- The methods are **conditionally independent**, i.e., given a single test result of one method, we know nothing about the result of another method.
+- The methods are **conditionally independent**, i.e., given a single test result of one method, we know almost nothing about the result of another method.
 
 Here we use a 3-method example to demonstrate how the estimation can be done using the **triangulation** package. The three methods were applied on 4,800 independent binary test problems. Let us denote positive and negative test results as 1 and 0, respectively. Based on the 0-1 pattern of the results by the three methods, the 4,800 binary test problems ended up the data as follows:
 
