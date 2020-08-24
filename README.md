@@ -1,6 +1,8 @@
 
 ## Installation
 
+You need **R** (version >= 3.1) on your computer. If you have not installed **R**, you can easily download and install it from https://cran.r-project.org/.
+
 We suggest installing the **triangulation** package using the `install_github` function in the **devtools** package:
 
 ```{r}
