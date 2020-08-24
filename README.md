@@ -103,7 +103,9 @@ Yang Z, Xu W, Zhai R, Li T, Ning Z, Pawitan Y, Shen X (2020). Triangulation of a
 ## For Help
 For direct R documentation of the **triangulate()** and  **combined.fdr()** functions, you can use a question mark in R, e.g.,
 
+```{r}
 ?triangulate
+```
 
 If you want further discussion or still have questions, please feel free to email the maintainer of **triangulation** via xia.shen@ed.ac.uk.
 
