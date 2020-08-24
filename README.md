@@ -98,7 +98,7 @@ combined.fdr(boot$sensitivity.est, boot$specificity.est, boot$prevalence.est)
 ```
 
 ## Citation
-If you use the HDL software, please cite
+If you use the triangulation software, please cite
 
 Yang Z, Xu W, Zhai R, Li T, Ning Z, Pawitan Y, Shen X (2020). Triangulation of analysis strategies links complex traits to specific tissues and cell types.  _Submitted_.
 
