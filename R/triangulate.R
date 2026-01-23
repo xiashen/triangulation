@@ -53,7 +53,6 @@ triangulate <- function(counts, ntest, method = 'Nelder-Mead', B = 0, start = c(
 		## bootstrap
 		cat('Bootstrap standard errors:\n')
 		res.boot <- matrix(NA, B, length(param))
-		require(svMisc)
 		set.seed(911)
 		for (j in 1:B) {
 			xx <- sample(rep(1:length(counts), counts), sum(counts), replace = TRUE)

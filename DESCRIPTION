@@ -1,6 +1,6 @@
 Package: triangulation
 Type: Package
-Title: Triangulation of test results from multiple methods
+Title: Triangulation of Binary Test Results from Multiple Methods
 Version: 1.0-1
 Date: 2020-08-23
 Author: Zhijian Yang, Yudi Pawitan, Xia Shen
