@@ -47,11 +47,11 @@
 triangulate <- function(counts, ntest, method = 'Nelder-Mead', B = 0, start = c(rep(.5, ntest*2), .5))
 {
 	param <- start
-	res <- optim(param, loglik, ntest = ntest, ny = counts)$par 
+	res <- optim(param, loglik, ntest = ntest, ny = counts, method = method)$par 
 	cat('Estimation done.\n')
 	if (B > 0) {
 		## bootstrap
-		cat('Boostrap standard errors:\n')
+		cat('Bootstrap standard errors:\n')
 		res.boot <- matrix(NA, B, length(param))
 		require(svMisc)
 		set.seed(911)
@@ -59,7 +59,7 @@ triangulate <- function(counts, ntest, method = 'Nelder-Mead', B = 0, start = c(
 			xx <- sample(rep(1:length(counts), counts), sum(counts), replace = TRUE)
 			xxtab <- table(xx)
 			names(xxtab) <- names(counts)
-			res.boot[j,] <- optim(param, loglik, ntest = ntest, ny = xxtab)$par 
+			res.boot[j,] <- optim(param, loglik, ntest = ntest, ny = xxtab, method = method)$par 
 			progress(j/B*100)
 		}
 		se <- sqrt(apply(res.boot, 2, 'var'))
